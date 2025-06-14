@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Settings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="bg-[#444444] text-[#EDEDED]">
+
+  <!-- Header -->
+  <header class="flex justify-around border-b-2 border-black bg-[#DA0037] h-20">
+    <h1 class="flex items-center font-semibold text-[28px] text-[#EDEDED]">
+      <img class="w-[60px] h-[60px]" src="./images/Logo.png" alt="Logo">
+      UserVault
+    </h1>
+    <nav class="flex items-center justify-center w-96">
+      <ul class="flex items-center justify-evenly w-96">
+        <li class="font-semibold text-[18px] hover:underline hover:scale-105 duration-200"><a href="./index.html">Home</a></li>
+        <li class="font-semibold text-[18px] hover:underline hover:scale-105 duration-200"><a href="./index.html">Features</a></li>
+        <li class="font-semibold text-[18px] hover:underline hover:scale-105 duration-200"><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex justify-between items-center">
+      <h2 class="text-[#EDEDED] font-medium text-[18px] flex gap-4 justify-center items-center">Muhammad Ahmed
+        <img class="w-14 h-14 rounded-full border-[1px] border-gray-500" src="./images/profile.jpg" alt="Profile">
+      </h2>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex w-full">
+    <!-- Profile Form -->
+    <section class="flex flex-col w-full p-10 items-center justify-center">
+      <h2 class="text-3xl font-bold mb-6">Profile Settings</h2>
+      <form class="bg-[#333232] p-8 rounded-xl shadow-lg max-w-2xl w-full space-y-6">
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-[#EDEDED] mb-1">Name</label>
+          <input type="text" id="name" name="name" value="Muhammad Ahmed"
+                 class="w-full p-3 rounded bg-[#444444] border border-gray-600 text-[#EDEDED] focus:outline-none focus:ring-2 focus:ring-[#DA0037]" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-[#EDEDED] mb-1">Email</label>
+          <input type="email" id="email" name="email" value="ahmed@example.com"
+                 class="w-full p-3 rounded bg-[#444444] border border-gray-600 text-[#EDEDED] focus:outline-none focus:ring-2 focus:ring-[#DA0037]" />
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-[#EDEDED] mb-1">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter new password"
+                 class="w-full p-3 rounded bg-[#444444] border border-gray-600 text-[#EDEDED] focus:outline-none focus:ring-2 focus:ring-[#DA0037]" />
+        </div>
+        <div class="flex gap-4 pt-4">
+          <button type="submit" class="bg-[#DA0037] hover:bg-[#ff1b4d] px-6 py-2 rounded text-white font-semibold transition">Save</button>
+          <button type="reset" class="bg-gray-600 hover:bg-gray-500 px-6 py-2 rounded text-white font-semibold transition">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

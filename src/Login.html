@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-[#444444]">
+   <!-- Header Code  -->
+  <header class="flex justify-around border-b-2 bg-[#DA0037] h-20">
+    <h1 class="flex items-center font-semibold text-[28px] text-[#EDEDED]"><img class="w-[60px] h-[60px]" src="./images/Logo.png" alt="Logo">UserVault</h1>
+    <nav class="flex items-center justify-center w-96">
+      <ul class="flex items-center justify-evenly w-96">
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Home</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Features</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex justify-between items-center w-44">
+      <a href="#"><button class="bg-[#EDEDED] font-semibold border-2 w-20 py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">Login</button></a>
+      <a href="./SignUp.html"><button class="bg-[#EDEDED] font-semibold border-2 w-20 py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">Signup</button></a>
+    </div>
+  </header>
+
+  <!-- Main Login code -->
+  <main class="h-[80vh] flex justify-center items-center">
+  <form class="bg-[#333232] p-8 pt-12 rounded-lg flex flex-col space-y-6 w-96">  
+    <div class="flex flex-col">
+      <label class="text-[#EDEDED] font-medium text-xl mb-1" for="email">Email: </label>
+      <input id="email" type="email" class="bg-[#444444] text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DA0037]" required>
+    </div>
+    <div class="flex flex-col">
+      <label class="text-[#EDEDED] font-medium text-xl mb-1" for="password">Password: </label>
+      <input id="password" type="password" class="bg-[#444444] text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DA0037]" required>
+    </div>
+    <button type="submit" class="bg-[#EDEDED] font-semibold py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">
+      <a href="./2FA.html" >Login</a>
+    </button>
+    <a class="text-[#EDEDED] text-sm text-center mt-2 hover:underline" href="./ForgotPassword.html">Forgot Password?</a>
+    
+  </form>
+</main>
+
+</body>
+</html>

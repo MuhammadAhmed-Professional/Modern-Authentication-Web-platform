@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2FA page</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-[#444444]">
+     <!-- Header Code  -->
+  <header class="flex justify-around border-b-2 bg-[#DA0037] h-20">
+    <h1 class="flex items-center font-semibold text-[28px] text-[#EDEDED]"><img class="w-[60px] h-[60px]" src="./images/Logo.png" alt="Logo">UserVault</h1>
+    <nav class="flex items-center justify-center w-96">
+      <ul class="flex items-center justify-evenly w-96">
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Home</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Features</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex justify-between items-center w-44">
+      <a href="./Login.html"><button class="bg-[#EDEDED] font-semibold border-2 w-20 py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">Login</button></a>
+      <a href="./SignUp.html"><button class="bg-[#EDEDED] font-semibold border-2 w-20 py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">Signup</button></a>
+    </div>
+  </header>
+
+  <main class="h-[80vh] flex justify-center items-center">
+  <div class="bg-[#333232] p-8 pt-12 rounded-lg w-96 flex flex-col items-center space-y-6">
+    <h2 class="text-[#EDEDED] text-2xl font-semibold">2FA Verification</h2>
+    <p class="text-[#EDEDED] text-sm text-center">Enter the 6-digit code sent to your email</p>
+    <input type="text" maxlength="6" placeholder="Enter Code" class="tracking-widest text-center text-lg text-white bg-[#444444] p-2 rounded-md w-full focus:outline-none"
+      required/>
+    <div class="text-[#EDEDED] text-sm">
+      You can resend code in: <span class="font-semibold">00:45</span>
+    </div>
+    <button disabled class="w-full bg-[#EDEDED] text-black font-semibold py-2 rounded-md opacity-50 cursor-not-allowed">
+      Resend Code
+    </button>
+    <button class="w-full bg-[#EDEDED] font-semibold py-2 rounded-md hover:scale-105 hover:bg-[#edededd5] duration-200 ease-in-out active:bg-[#EDEDED]">
+     <a href="./Dashboard.html">Verify</a>
+    </button>
+  </div>
+</main>
+
+</body>
+</html>

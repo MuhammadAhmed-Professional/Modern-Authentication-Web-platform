@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Page</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bar {
+      background-color: #EDEDED;
+      width: 30px;
+      transition: height 0.3s ease-in-out;
+    }
+
+    .bar:hover {
+      background-color: #ffffffc5;
+    }
+  </style>
+</head>
+<body class="bg-[#444444]">
+   <!-- Header Code  -->
+  <header class="flex justify-around border-b-2 border-black bg-[#DA0037] h-20">
+    <h1 class="flex items-center font-semibold text-[28px] text-[#EDEDED]"><img class="w-[60px] h-[60px]" src="./images/Logo.png" alt="Logo">UserVault</h1>
+    <nav class="flex items-center justify-center w-96">
+      <ul class="flex items-center justify-evenly w-96">
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Home</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Features</a></li>
+        <li class="font-semibold text-[18px] text-[#EDEDED] hover:underline hover:scale-105 duration-200"><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="flex justify-between items-center">
+      <h2 class="text-[#EDEDED] font-medium text-[18px] flex gap-4 justify-center items-center">Muhammad Ahmed<img class="w-14 h-14 rounded-full border-[1px] border-gray-500" src="./images/profile.jpg" alt="Profile"></h2>
+    </div>
+  </header>
+
+  <!-- main dashboard -->
+  <main class="flex min-h-screen">
+    <!-- sidebar -->
+    <aside class="w-64 bg-[#333232] text-[#EDEDED] flex flex-col p-6 space-y-6">
+      <h2 class="text-2xl font-bold">Dashboard</h2>
+      <nav class="flex flex-col gap-3 text-sm font-medium">
+        <a href="./ProfileSetting.html" class="hover:text-white transition">Profile Settings</a>
+        <a href="#" class="hover:text-white transition">Aynalitics</a>
+        <a href="#" class="hover:text-white transition">More Information</a>
+        <a href="#" class="hover:text-white transition">Packages</a>
+        <a href="#" class="hover:text-white transition">Logout</a>
+      </nav>
+    </aside>
+
+    <div class="flex flex-col items-center flex-1 pb-12">
+      <!-- welcome card -->
+      <div class="flex justify-center">
+        <div class="text-[#EDEDED] bg-[#333232] flex flex-col items-start justify-center mt-8 p-10 rounded-2xl shadow-md shadow-black">
+          <h2 class="font-bold text-2xl">Welcome! <span class="text-[#DA0037]">Muhammad Ahmed</span></h2>
+          <p>Here you can view the Packages you have bought and how they have benefited you!</p>
+        </div>
+      </div>
+
+      <h2 class="text-4xl font-bold text-start text-[#EDEDED] pt-12">Active Packages</h2>
+
+      <div class="flex justify-center gap-8">
+        <div>
+          <div class="text-[#EDEDED] bg-[#333232] flex flex-col items-start justify-center mt-8 p-6 pb-3 rounded-lg w-[388px]">
+          <h2 class="font-bold text-2xl pb-6">Session Management Package</h2>
+          <p class="text-[18px] font-medium">Status: <span class="text-green-400 font-normal">Active</span></p>
+          <p class="text-[18px] font-medium">Monitoring Status: <span class="text-green-400 font-normal">Excellent</span></p>
+          <p class="text-[18px] font-medium">Vulnerabilities: <span class="text-green-400 font-normal">None</span></p>
+          <p class="text-[18px] font-medium">Total Monitoring Time: <span class="font-normal">326 hr</span></p>
+          <p class="text-[14px] mt-3">Expires: 21 June 2025</p>
+          </div>
+        </div>
+        <div>
+          <div class="text-[#EDEDED] bg-[#333232] flex flex-col items-start justify-center mt-8 p-6 pb-3 rounded-lg w-[388px]">
+          <h2 class="font-bold text-2xl pb-6">Bot Detection</h2>
+          <p class="text-[18px] font-medium">Status: <span class="text-green-400 font-normal">Active</span></p>
+          <p class="text-[18px] font-medium">Monitoring Status: <span class="text-green-400 font-normal">Excellent</span></p>
+          <p class="text-[18px] font-medium">Vulnerabilities: <span class="text-green-400 font-normal">None</span></p>
+          <p class="text-[18px] font-medium">Total Monitoring Time: <span class="font-normal">255 hr</span></p>
+          <p class="text-[14px] mt-3">Expires: 23 June 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-4xl font-bold text-start text-[#EDEDED] pt-12 pb-12">User Traffic</h2>
+
+      <!-- graphs -->
+      <div class=" text-[#EDEDED] flex justify-center items-center w-full py-8">
+        <div class="p-6 rounded-lg bg-[#333232]  max-w-4xl">
+          <h2 class="text-2xl font-semibold mb-8">📊 User Traffic: June 2024 - June 2025</h2>
+          
+          <!-- Chart container -->
+          <div class="flex items-end gap-4 h-64 border-l-2 border-b-2 border-[#EDEDED] p-4 relative">
+
+            <!-- Bars (fake data: height increases per month) -->
+            <div class="flex flex-col items-center">
+              <div class="bar h-12 rounded-t-md"></div>
+              <span class="text-sm mt-1">Jun</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-16 rounded-t-md"></div>
+              <span class="text-sm mt-1">Jul</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-14 rounded-t-md"></div>
+              <span class="text-sm mt-1">Aug</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-20 rounded-t-md"></div>
+              <span class="text-sm mt-1">Sep</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-28 rounded-t-md"></div>
+              <span class="text-sm mt-1">Oct</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-22 rounded-t-md"></div>
+              <span class="text-sm mt-1">Nov</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-26 rounded-t-md"></div>
+              <span class="text-sm mt-1">Dec</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-30 rounded-t-md"></div>
+              <span class="text-sm mt-1">Jan</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-34 rounded-t-md"></div>
+              <span class="text-sm mt-1">Feb</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-28 rounded-t-md"></div>
+              <span class="text-sm mt-1">Mar</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-26 rounded-t-md"></div>
+              <span class="text-sm mt-1">Apr</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-36 rounded-t-md"></div>
+              <span class="text-sm mt-1">May</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="bar h-46 rounded-t-md"></div>
+              <span class="text-sm mt-1">Jun</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
